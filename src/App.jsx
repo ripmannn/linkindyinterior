@@ -24,9 +24,9 @@ function App() {
         <meta name="twitter:description" content="Indy Interior membantu Anda merancang desain interior untuk rumah, apartemen, kantor, dan banyak lagi. Segera wujudkan desain interior impian Anda sekarang juga. Kunjungi situs kami !" />
         <meta name="twitter:image" content="./indylogo.webp" />
       </Helmet>
-      <div className="bg-back bg-cover bg-center relative h-screen">
-        <div className="absolute inset-0 bg-gray-800 opacity-70 h-screen z-10"></div>
-        <div className="relative z-20">
+      <div className="bg-back bg-cover bg-center relative min-h-screen w-full">
+        <div className="absolute inset-0 bg-gray-800 opacity-70 z-10"></div>
+        <div className="relative z-20 min-h-screen flex flex-col justify-center items-center">
           <div className="flex flex-col justify-center items-center py-16 gap-y-2">
             {/* Animated Image */}
             <motion.img className="rounded-full w-56 h-56 lg:w-80 lg:h-80" src="/indylogo.webp" alt="" initial={{ opacity: 0, scale: 0.8 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 1, ease: "easeOut" }} />
